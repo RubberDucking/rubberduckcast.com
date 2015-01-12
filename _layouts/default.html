@@ -1,0 +1,21 @@
+{% include html_open.html %}
+
+{% assign container_class = nil %}
+{% if page.two_col == true %}
+    {% assign container_class = 'two-col' %}
+{% endif %}
+
+<div class="container {{ container_class }}">
+
+    {% include header.html %}
+
+    <div class="main">
+        {{content}}
+    </div>
+
+</div>
+
+
+
+{% include footer.html %}
+{% include html_close.html %}

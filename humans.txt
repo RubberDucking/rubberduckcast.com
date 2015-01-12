@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Matt Surabian -- Developer & Writing -- @mattsurabian
+    Matt Gagne -- Design & Writing -- @rubberduckmatt
+    Adam Jarret -- Developer & Writing -- @adamjarret
+
+# THANKS
+    Thanks to all the open source developers whose work we were able to leverage while making this site
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Normalize.css, jQuery, Modernizr, Grunt, Stylus, Jekyll, Ruby, RequireJS

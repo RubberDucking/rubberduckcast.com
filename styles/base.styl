@@ -1,0 +1,70 @@
+@require './mixins/fonts.styl'
+@require './mixins/colors.styl'
+
+body
+  background-color $background
+  color $bodyTextColor
+  font-family $bodyFont
+  font-size 18px
+
+  h1
+    font-family $titleFont
+    font-weight bold
+    color $accent
+    margin 0
+
+    a
+      text-decoration none
+      color $accent
+
+  h2
+    font-family $headingFont
+    color $headerColor
+    padding 0
+    margin 0 0 10px 0
+    font-weight bold
+
+  h2.pageTitle
+    margin 10px auto
+    width 90%
+
+  .content
+    width 90%
+    margin 15px auto
+    overflow hidden
+
+  .header
+    .title-container, .nav-container
+      text-align center
+
+    .nav-container
+      .main-nav, .subscribe-nav
+        list-style none
+        padding 0
+        li
+          display inline-block
+          margin 7px
+          padding: 0
+          a
+            font-family $headingFont
+            text-decoration none
+            color $headerColor
+            &:hover
+              color $contrast
+            &.current
+              color $contrast
+
+
+    .logo-container
+      .logo
+        background-size contain
+        margin 0 auto
+
+  .main
+    padding 15px
+
+    a
+      color $accent
+      &:hover
+        color $contrast
+

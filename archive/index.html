@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="archive">
+    <h2 class="pageTitle">Episode Archive</h2>
+
+    {% for post in site.posts %}
+    <div class="content posts">
+        <h2>{{post.number}}. {{post.title}}</h2>
+        {{post.description}}
+        <br/><br/>
+        <em>Featured Segments: {{post.segments}}</em>
+        <br/>
+        <a href="{{post.asset_link}}" class="download-link">Download Episode</a>
+    </div>
+    {% endfor %}
+</div>

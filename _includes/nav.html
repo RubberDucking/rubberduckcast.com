@@ -1,0 +1,25 @@
+<div class="nav-container">
+
+    <ul class="main-nav">
+        {% for link in site.main_navigation %}
+            {% assign current = nil %}
+
+            {% if page.url contains link.url %}
+                {% assign current = 'current' %}
+            {% endif %}
+
+            <li>
+                <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <ul class="subscribe-nav">
+        {% for link in site.feed_navigation %}
+            <li>
+                <a href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+</div>

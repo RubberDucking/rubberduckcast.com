@@ -1,0 +1,91 @@
+@require '../mixins/list-link-font-size.styl'
+@require '../mixins/size.styl'
+@require '../mixins/logo.styl'
+
+/**
+ * Small Screen Layout
+ *   Stacked header on top of main section with scaled
+ *   down font sizes and duck logo
+ */
+@media (max-width: 400px)
+  body
+
+    h1 
+      font-size 1.8rem
+
+    h2 
+      font-size 1.3rem
+
+    .header
+
+      logo(120px)
+
+      .nav-container
+
+        .main-nav 
+          margin -10px auto
+
+          list-link-font-size(1.0rem)
+
+        .subscribe-nav 
+          margin -15px auto
+
+          list-link-font-size(0.8rem)
+
+/**
+ * Medium Screen Layout
+ *   Stacked header on top of main section with mid sized fonts
+ */
+@media (min-width: 401px)
+  body
+
+    h1 
+      font-size 3.0rem
+
+    h2 
+      font-size 1.7rem
+      &.pageTitle
+       font-size 2.1rem
+
+    .header
+
+      logo(150px)
+
+      .nav-container
+
+        .main-nav
+          margin 0 auto
+
+          list-link-font-size(1.5rem)
+
+        .subscribe-nav
+          margin -10px auto
+
+          list-link-font-size(1.0rem)
+
+
+
+/**
+ * Large Screen Layout
+ *   Two column layout where header is on the left and very large
+ *   main content is floated to the right. Requires the `two-col`
+ *   class in order to be activated on large screens
+ */
+@media (min-width: 869px) 
+  body
+    .two-col 
+
+      h1 
+        font-size 4.0rem
+
+      .header 
+        width 46%
+        float left
+        margin 10% auto
+
+        logo(220px)
+
+      .main 
+        width 48%
+        float right
+

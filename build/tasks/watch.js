@@ -3,10 +3,10 @@ module.exports = function(grunt) {
 
     grunt.config('watch', {
         scripts: {
-            files: ['./styles/**/*.styl', './_includes/*.*', './_layouts/*.*', './*.html'],
-            tasks: ['css', 'jekyll:build'],
+            files: ['./styles/**/*.styl', './img/*.svg', './img/*.png', './js/*.js'],
+            tasks: ['test', 'css', 'img', 'js'],
             options: {
-                spawn:true
+                spawn:false
             }
         }
     });

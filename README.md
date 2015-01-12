@@ -1,6 +1,6 @@
 # Rubber Duck Cast
 
-Working on this repo requires [nodejs with npm](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) and [grunt](http://gruntjs.com/getting-started).
+Working on this repo requires [Ruby](https://www.ruby-lang.org/en/documentation/installation/), the [jekyll gem](http://jekyllrb.com/docs/installation/) , [nodejs with npm](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) and [grunt](http://gruntjs.com/getting-started).
 
 
 ## Getting Started

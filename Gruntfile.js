@@ -25,15 +25,10 @@ module.exports = function(grunt) {
     'requirejs'
   ]);
 
-  grunt.registerTask('img', [
-    'grunticon'
-  ]);
-
   grunt.registerTask('default', [
     'test',
     'css',
     'js',
-    'img',
     'jekyll:build'
   ]);
 

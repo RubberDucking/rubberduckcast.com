@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           command: 'jekyll build'
         },
         push_prod_s3: {
-            command: 'aws s3 cp _site/ s3://rubberduckcast.com --recursive --include \'*\' --acl \'public-read\''
+            command: 'aws --profile rubberduck s3 cp _site/ s3://rubberduckcast.com --recursive --include \'*\' --acl \'public-read\''
         }
     });
 };

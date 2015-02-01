@@ -41,6 +41,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('push-episodes', [
       'shell:push_episodes'
-  ])
+  ]);
 
 };

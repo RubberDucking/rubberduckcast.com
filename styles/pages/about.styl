@@ -1,11 +1,25 @@
+@require '../mixins/content-box.styl'
 @require '../mixins/colors.styl'
 
 .about
 
   .bio
-    padding-bottom: 15px
-    border-bottom 1px solid $contrast
+    content-box()
 
     h3
       margin 0
       padding 0
+
+    .social
+      overflow hidden
+      margin-bottom 12px
+
+      div
+        float left
+        margin-left 12px
+
+        &:first-child
+          margin-left -3px
+
+        a
+          color $bodyTextColor

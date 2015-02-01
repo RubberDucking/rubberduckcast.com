@@ -17,7 +17,7 @@
     <ul class="subscribe-nav">
         {% for link in site.feed_navigation %}
             <li>
-                <a href="{{ link.url }}">{{ link.text }}</a>
+                <div class="{{ link.icon }}"><a href="{{ link.url }}">{{ link.text }}</a></div>
             </li>
         {% endfor %}
     </ul>

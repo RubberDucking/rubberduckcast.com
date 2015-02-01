@@ -44,10 +44,10 @@ main_navigation:
 feed_navigation:
 - text: iTunes
   url: /feed.xml
+  icon: icon-podcast
 - text: RSS
   url: /feed.xml
-- text: InstaCast
-  url: /feed.xml
+  icon: icon-rss
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt

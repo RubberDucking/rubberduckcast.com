@@ -13,6 +13,9 @@ module.exports = function(grunt) {
         },
         push_prod_s3: {
             command: 'aws --profile rubberduck s3 cp _site/ s3://rubberduckcast.com --recursive --include \'*\' --acl \'public-read\''
+        },
+        push_episodes: {
+            command: 'aws --profile rubberduck s3 cp _episodes/ s3://rubberduckingepisodes --recursive --include \'*\' --acl \'public-read\''
         }
     });
 };

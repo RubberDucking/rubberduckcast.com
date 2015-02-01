@@ -39,4 +39,8 @@ module.exports = function(grunt) {
     'shell:push_prod_s3'
   ]);
 
+  grunt.registerTask('push-episodes', [
+      'shell:push_episodes'
+  ])
+
 };

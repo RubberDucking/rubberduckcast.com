@@ -24,7 +24,7 @@ two_col: true
     <div class="content">
         <h2>Latest Episodes</h2>
         {% for post in site.posts limit=2%}
-            <strong>{{post.number}}. {{post.title}}</strong><br/>
+            <strong><a href="{{ BASE_PATH }}{{ post.url }}">{{post.number}}. {{post.title}}</a></strong><br/>
             {{post.short_description}}<br/><br/>
         {% endfor %}
     </div>

@@ -25,7 +25,7 @@ two_col: true
         <h2>Latest Episodes</h2>
         {% for post in site.posts limit=2%}
             <strong>{{post.number}}. {{post.title}}</strong><br/>
-            {{post.short_description}}
+            {{post.short_description}}<br/><br/>
         {% endfor %}
     </div>
 

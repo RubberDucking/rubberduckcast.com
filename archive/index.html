@@ -7,12 +7,12 @@ layout: default
 
     {% for post in site.posts %}
     <div class="content posts">
-        <h2>{{post.number}}. {{post.title}}</h2>
-        {{post.description}}
+        <h3>{{post.number}}. {{post.title}}</h3>
+        {{post.short_description}}
         <br/><br/>
         <em>Featured Segments: {{post.segments}}</em>
         <br/>
-        <a href="{{post.asset_link}}" class="download-link">Download Episode</a>
+        <div class="icon-download"><a href="{{post.asset_link}}" class="download-link">Download Episode</a></div>
     </div>
     {% endfor %}
 </div>

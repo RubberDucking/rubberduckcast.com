@@ -3,39 +3,17 @@ layout: default
 ---
 <div class="about">
     <h2 class="pageTitle">About Us</h2>
-    <div class="bio content">
-        <img src="{{ 'mpgagne@gmail.com' | gravatar }}" class="gravatar" alt="A photo of Matt Gagne" align="left">
-        <h3>Matt Gagne</h3>  <div class="social">
-        <div class="icon-github-squared"><a href="https://github.com/mpgagne" target="_blank">mpgagne</a></div>
-        <div class="icon-twitter-squared"><a href="https://twitter.com/mpgagne" target="_blank">@mpgagne</a></div>
-    </div>
 
-        A lover of all things science and technology, Matt has had a long history with both. While his favorite job was probably that year he got to make computer games for monkeys to test their learning abilities; he has since gone on to work in medical research and has a masters in bioimaging technology. Being unable to escape school, Matt is currently working on getting his PhD in Medical Physics at UMass Lowell. Like any good geek, he has done his share of computer and IT work along the way and is trying to become a better amateur coder than he currently is.
-    </div>
-
-    <div class="bio content">
-        <img src="{{ 'adam.jarret@gmail.com' | gravatar }}" class="gravatar" alt="A photo of Adam Jarret" align="left">
-        <h3>Adam Jarret</h3>
-        <div class="social">
-            <div class="icon-github-squared"><a href="https://github.com/adamjarret" target="_blank">adamjarret</a></div>
-            <div class="icon-twitter-squared"><a href="https://twitter.com/adamjarret" target="_blank">@adamjarret</a></div>
+    {% for host in site.data.hosts %}
+        <div class="bio content">
+            <img src="{{ host.gravatar | gravatar }}" class="gravatar" alt="A photo of {{ host.name }}" align="left">
+            <h3>{{ host.name }}</h3>
+            <div class="social">
+                <div class="icon-github-squared"><a href="https://github.com/{{ host.github }}" target="_blank">{{ host.github }}</a></div>
+                <div class="icon-twitter-squared"><a href="https://twitter.com/{{ host.twitter }}" target="_blank">@{{ host.twitter }}</a></div>
+            </div>
+            {{ host.bio }}
         </div>
-        Sometimes there's a man, and he's the man for his time and place. Othertimes there's a man who takes his gravatar image in a creepy dungeon. Somewhere in between is Adam Jarret.
-        A long time developer, Adam currently holds down his .NET day job building Xavus's <a href="http://myactivecenter.com/">MyActiveCenter</a> from sunny and beautiful Hawaii, far from the shadowy underworld he used to inhabit when he took his gravatar image.
-        A man of the world, Adam has traveled extensively and lived in Europe more than once. Despite his general aversion to strenuous exercise he inexplicably loves biking and can often be seen tooling around on his cruiser.
-    </div>
+    {% endfor %}
 
-    <div class="bio content">
-        <img src="{{ 'matt@mattsurabian.com' | gravatar }}" class="gravatar" alt="A photo of Matt Surbaian" align="left">
-        <h3>Matt Surabian</h3>
-        <div class="social">
-            <div class="icon-github-squared"><a href="https://github.com/mattsurabian" target="_blank">mattsurabian</a></div>
-            <div class="icon-twitter-squared"><a href="https://twitter.com/mattsurabian" target="_blank">@mattsurabian</a></div>
-        </div>
-
-        A known space hater, Arch Linux user, and lover of reality television, Matt has been described by friends and enemies alike as: <em>"the smartest idiot they've ever met"</em>.
-        Matt is currently the account manager at <a href="http://www.bocoup.com" target="_blank">Bocoup</a> in Boston and has worked in the tech industry for 10 years doing front-end development and infrastructure administration.
-        He believes computers need to be put in their place (lest we have a robot uprising) and loves helping other people learn to do that.
-        Matt has an active interest in cryptography and loves all things security related.
-    </div>
 </div>

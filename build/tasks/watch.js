@@ -3,8 +3,8 @@ module.exports = function(grunt) {
 
     grunt.config('watch', {
         scripts: {
-            files: ['./styles/**/*.styl', './img/*.svg', './img/*.png', './js/*.js'],
-            tasks: ['test', 'css', 'img', 'js'],
+            files: ['./styles/**/*.styl', './js/*.js'],
+            tasks: ['default'],
             options: {
                 spawn:false
             }

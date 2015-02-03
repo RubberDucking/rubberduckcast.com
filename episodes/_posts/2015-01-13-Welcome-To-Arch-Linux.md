@@ -1,6 +1,8 @@
 ---
 layout: episode
 number: "01"
+duration: "31:27"
+length: "16449272"
 title: "Welcome to Arch Linux"
 short_description: "Matt S. moves to Arch Linux, talks deployment in his first installment of Playing with a Full Stack, and proposes an investment opportunity."
 asset_link: "https://s3.amazonaws.com/rubberduckingepisodes/RubberDucking001.m4a"

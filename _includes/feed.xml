@@ -18,17 +18,18 @@
         <sy:updateFrequency>1</sy:updateFrequency>
         <language>en</language>
         <copyright>Copyright © {{site.title}}</copyright>
-        <managingEditor>{{site.author.email}}</managingEditor>
-        <webMaster>{{site.author.email}}</webMaster>
+        <managingEditor>{{site.author.email}} ({{ site.author.name }})</managingEditor>
+        <webMaster>{{site.author.email}} ({{ site.author.name }})</webMaster>
 
         <itunes:new-feed-url>{{site.base_url}}/feed.xml</itunes:new-feed-url>
         <itunes:subtitle>{{site.tagline}}</itunes:subtitle>
         <itunes:summary>{{site.tagline}}</itunes:summary>
         <itunes:keywords></itunes:keywords>
-        <itunes:category text="Tech News" />
-        <itunes:category text="Technology" />
+        <itunes:category text="Technology">
+            <itunes:category text="Tech News" />
+        </itunes:category>
         <itunes:category text="Science &amp; Medicine" />
-        <itunes:category text="Other" />
+        <itunes:category text="TV &amp; Film" />
         <itunes:author>{{site.author.name}}</itunes:author>
         <itunes:owner>
             <itunes:name>{{site.author.name}}</itunes:name>
@@ -45,8 +46,8 @@
             <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
             <description>{{'<![CDATA['}}{{ episode.short_description }}{{']]>'}}</description>
 
-            <enclosure url="{{ site.podcast_file_storage }}{{ episode.podcast_file_name }}" type="audio/mpeg" />
-            <guid>{{ site.podcast_file_storage | xml_escape }}{{ episode.podcast_file_name | xml_escape }}</guid>
+            <enclosure url="{{ site.podcast_file_storage }}{{ episode.podcast_file_name }}" length="{{ episode.length }}" type="audio/mpeg" />
+            <guid>{{ episode.asset_link | xml_escape }}</guid>
 
             <itunes:author>{{site.author.name}}</itunes:author>
             <itunes:summary>{{ episode.content | strip_html | xml_escape }}</itunes:summary>

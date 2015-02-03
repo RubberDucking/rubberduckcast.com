@@ -46,7 +46,7 @@
             <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
             <description>{{'<![CDATA['}}{{ episode.short_description }}{{']]>'}}</description>
 
-            <enclosure url="{{ site.podcast_file_storage }}{{ episode.podcast_file_name }}" length="{{ episode.length }}" type="audio/mpeg" />
+            <enclosure url="{{ epsideo.asset_link | xml_escape }}" length="{{ episode.length }}" type="audio/mpeg" />
             <guid>{{ episode.asset_link | xml_escape }}</guid>
 
             <itunes:author>{{site.author.name}}</itunes:author>

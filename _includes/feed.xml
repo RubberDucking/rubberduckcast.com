@@ -10,7 +10,7 @@
      xmlns:media="http://search.yahoo.com/mrss/">
     <channel>
         <title>{{site.title}}</title>
-        <atom:link href="{{site.base_url}}/atom.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="{{site.base_url}}/feed.xml" rel="self" type="application/rss+xml" />
         <link>{{site.base_url}}</link>
         <description>{{site.description}}</description>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
@@ -21,7 +21,7 @@
         <managingEditor>{{site.author.email}}</managingEditor>
         <webMaster>{{site.author.email}}</webMaster>
 
-        <itunes:new-feed-url>{{site.base_url}}/atom.xml</itunes:new-feed-url>
+        <itunes:new-feed-url>{{site.base_url}}/feed.xml</itunes:new-feed-url>
         <itunes:subtitle>{{site.tagline}}</itunes:subtitle>
         <itunes:summary>{{site.tagline}}</itunes:summary>
         <itunes:keywords></itunes:keywords>
@@ -38,21 +38,21 @@
         <itunes:explicit>no</itunes:explicit>
         <itunes:image href="{{site.base_url}}/images/logo_itunes_grande.png" />
 
-        {% for post in site.posts %}
+        {% for episode in site.categories.episodes %}
         <item>
-            <link>{{site.base_url}}{{ post.url }}</link>
-            <title>{{ post.title }}</title>
-            <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-            <description>{{'<![CDATA['}}{{ post.short_description }}{{']]>'}}</description>
+            <link>{{site.base_url}}{{ episode.url }}</link>
+            <title>{{ episode.title }}</title>
+            <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
+            <description>{{'<![CDATA['}}{{ episode.short_description }}{{']]>'}}</description>
 
-            <enclosure url="{{ site.podcast_file_storage }}{{ post.podcast_file_name }}" type="audio/mpeg" />
-            <guid>{{ site.podcast_file_storage | xml_escape }}{{ post.podcast_file_name | xml_escape }}</guid>
+            <enclosure url="{{ site.podcast_file_storage }}{{ episode.podcast_file_name }}" type="audio/mpeg" />
+            <guid>{{ site.podcast_file_storage | xml_escape }}{{ episode.podcast_file_name | xml_escape }}</guid>
 
             <itunes:author>{{site.author.name}}</itunes:author>
-            <itunes:summary>{{ post.content | strip_html | xml_escape }}</itunes:summary>
-            <itunes:image href="{{ site.base_url }}{{post.img_src }}" />
-            <itunes:duration>{{ post.duration }}</itunes:duration>
-            <itunes:keywords>{{ post.tags | join:', ' }}</itunes:keywords>
+            <itunes:summary>{{ episode.content | strip_html | xml_escape }}</itunes:summary>
+            <itunes:image href="{{ site.base_url }}{{episode.img_src }}" />
+            <itunes:duration>{{ episode.duration }}</itunes:duration>
+            <itunes:keywords>{{ episode.tags | join:', ' }}</itunes:keywords>
         </item>
         {% endfor %}
     </channel>

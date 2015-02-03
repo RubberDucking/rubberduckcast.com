@@ -42,7 +42,7 @@
         {% for episode in site.categories.episodes %}
         <item>
             <link>{{site.base_url}}{{ episode.url }}</link>
-            <title>{{ episode.title }}</title>
+            <title>{{ episode.number}}. {{ episode.title }}</title>
             <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
             <description>{{'<![CDATA['}}{{ episode.short_description }}{{']]>'}}</description>
 

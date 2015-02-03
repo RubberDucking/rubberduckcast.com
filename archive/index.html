@@ -5,14 +5,14 @@ layout: default
 <div class="archive">
     <h2 class="pageTitle">Episode Archive</h2>
 
-    {% for post in site.posts %}
-    <div class="content posts">
-        <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{post.number}}. {{post.title}}</a></h3>
-        {{post.short_description}}
+    {% for episode in site.categories.episodes %}
+    <div class="content episodes">
+        <h3><a href="{{ BASE_PATH }}{{ episode.url }}">{{episode.number}}. {{episode.title}}</a></h3>
+        {{episode.short_description}}
         <br/><br/>
-        <em>Featured Segments: {{post.segments}}</em>
+        <em>Featured Segments: {{episode.segments}}</em>
         <br/>
-        <div class="icon-download"><a href="{{post.asset_link}}" class="download-link">Download Episode</a></div>
+        <div class="icon-download"><a href="{{episode.asset_link}}" class="download-link">Download Episode</a></div>
     </div>
     {% endfor %}
 </div>

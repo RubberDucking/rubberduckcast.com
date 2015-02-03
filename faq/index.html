@@ -6,16 +6,11 @@ comments: true
 <div class="faq">
     <h2 class="pageTitle">Questions</h2>
 
+    {% for question in site.categories.questions %}
     <div class="content">
-        <h3>What's Rubber Ducking?</h3>
-        The term originated in the book "The Pragmatic Programmer" and
-        refers to a debugging practice where an engineer describes their attempted solution
-        out-loud to an inanimate object in an effort to trigger the a-ha moment that will
-        solve the problem.
+        {{ question.content }}
     </div>
-
-    <div class="content">
-        <h3>Why aren't there more questions?</h3>
+    {% endfor %}
         I don't know, ask some! Either in the comments section below or via email <a href="mailto:ducks@rubberduckcast.com">ducks@rubberduckcast.com</a>
     </div>
 

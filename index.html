@@ -23,9 +23,9 @@ two_col: true
 
     <div class="content">
         <h2>Latest Episodes</h2>
-        {% for post in site.posts limit=2%}
-            <strong><a href="{{ BASE_PATH }}{{ post.url }}">{{post.number}}. {{post.title}}</a></strong><br/>
-            {{post.short_description}}<br/><br/>
+        {% for episode in site.categories.episodes limit=2%}
+            <strong><a href="{{ BASE_PATH }}{{ episode.url }}">{{episode.number}}. {{episode.title}}</a></strong><br/>
+            {{episode.short_description}}<br/><br/>
         {% endfor %}
     </div>
 

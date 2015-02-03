@@ -21,7 +21,7 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : Rubber Ducking
-description: A podcast wherein a javascript developer, .NET developer, and medical physicist get together to talk science and technology. Rubber Ducking is the the only podcast about physics, programming, and reality television was created by Matt Gagne, Adam Jarret, and Matt Surabian.
+description: A podcast wherein a javascript developer, .NET developer, and medical physicist get together to talk science and technology. Rubber Ducking was created by Matt Gagne, Adam Jarret, and Matt Surabian and is the the only podcast about physics, programming, and reality television.
 tagline: The only podcast about physics, programming, and reality television.
 base_url: http://rubberduckcast.com
 

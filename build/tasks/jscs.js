@@ -7,7 +7,6 @@ module.exports = function(grunt) {
     },
     src: [
       'Gruntfile.js',
-      'js/**/*.js',
       'build/tasks/**/*.js'
     ]
   });

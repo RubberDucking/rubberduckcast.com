@@ -21,14 +21,9 @@ module.exports = function(grunt) {
     'concurrent:live_dev'
   ]);
 
-  grunt.registerTask('js', [
-    'requirejs'
-  ]);
-
   grunt.registerTask('default', [
     'test',
     'css',
-    'js',
     'jekyll:build'
   ]);
 
@@ -40,7 +35,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('push-episodes', [
-      'shell:push_episodes'
+    'shell:push_episodes'
   ]);
 
 };

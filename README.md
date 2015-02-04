@@ -1,11 +1,15 @@
 # Rubber Duck Cast
 
-Working on this repo requires [Ruby](https://www.ruby-lang.org/en/documentation/installation/), [Bundler](http://bundler.io/) which installs the [jekyll gem](http://jekyllrb.com/docs/installation/) and an [S3 Log Analyzer](https://github.com/wvanbergen/request-log-analyzer), [nodejs with npm](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) and [grunt-cli](http://gruntjs.com/getting-started).
+Working on this repo requires [Ruby](https://www.ruby-lang.org/en/documentation/installation/), [Bundler](http://bundler.io/), [nodejs with npm](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) and [grunt-cli](http://gruntjs.com/getting-started).
 
 
 ## Getting Started
 
  1. Clone this repo
+ 1. Ensure [Ruby is installed](https://www.ruby-lang.org/en/documentation/installation/)
+ 1. Ensure [Bundler is installer](http://bundler.io/)
+ 1. Ensure [NodeJS and NPM are installed](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
+ 1. Ensure the [grunt-cli node module](http://gruntjs.com/getting-started) is installed globally
  1. Run `npm install`
  1. To build the site run `grunt`
 

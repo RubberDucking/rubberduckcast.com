@@ -7,8 +7,15 @@ layout: default
 
     {{ content }}
 
+    <audio controls>
+        <source src="{{ page.aac_asset_link}}" type="audio/mp4">
+        <source src="{{ page.ogg_asset_link}}" type="audio/ogg">
+    </audio>
+    <br/>
     <br/>
     <em>Featured Segments: {{page.segments}}</em>
+
     <br/>
-    <div class="icon-download"><a href="{{page.asset_link}}" class="download-link">Download Episode</a></div>
+    <div class="icon-download"><a href="{{page.aac_asset_link}}" class="download-link">Download Episode As AAC M4A</a></div>
+    <div class="icon-download"><a href="{{page.ogg_asset_link}}" class="download-link">Download Episode As OGG</a></div>
 </div>

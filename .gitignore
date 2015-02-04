@@ -1,7 +1,7 @@
 bower_components
 node_modules
-
 _site
 _audio
 dist
-icons
+.bundle
+_gems

@@ -38,4 +38,8 @@ module.exports = function(grunt) {
     'shell:push_episodes'
   ]);
 
+  grunt.registerTask('gen-stats', [
+    'shell:download_report'
+  ]);
+
 };

@@ -5,3 +5,5 @@ _audio
 dist
 .bundle
 _gems
+_s3_logs
+report.html

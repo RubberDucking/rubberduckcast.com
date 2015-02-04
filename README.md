@@ -1,6 +1,6 @@
 # Rubber Duck Cast
 
-Working on this repo requires [Ruby](https://www.ruby-lang.org/en/documentation/installation/), the [jekyll gem](http://jekyllrb.com/docs/installation/) , [nodejs with npm](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) and [grunt](http://gruntjs.com/getting-started).
+Working on this repo requires [Ruby](https://www.ruby-lang.org/en/documentation/installation/), [Bundler](http://bundler.io/) which installs the [jekyll gem](http://jekyllrb.com/docs/installation/) and an [S3 Log Analyzer](https://github.com/wvanbergen/request-log-analyzer), [nodejs with npm](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) and [grunt-cli](http://gruntjs.com/getting-started).
 
 
 ## Getting Started
@@ -17,3 +17,4 @@ Working on this repo requires [Ruby](https://www.ruby-lang.org/en/documentation/
  - `grunt` The default task runs `test`, `css`, and `jekyll:build` tasks outputting the static site into `_site`
  - `grunt deploy-to-prod` Runs the default task then attempts to push to the site's `S3` bucket using `AWS CLI` which must already be locally installed and configured (which is outside the scope of this project).
  - `grunt push-episodes` Pushes the contents of the ignored `_audio` directory to the episodes `S3` bucket with `public-read` access using the `AWS CLI`
+ - `grunt gen-stats` Runs `S3 log analyzer` on download logs into the ignored `_s3_logs` directory and generates `report.html` for stats.

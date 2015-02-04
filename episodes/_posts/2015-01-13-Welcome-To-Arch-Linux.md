@@ -9,6 +9,7 @@ aac_asset_link: "http://s3.amazonaws.com/rubberduckingepisodes/RubberDucking001.
 ogg_asset_link: "http://s3.amazonaws.com/rubberduckingepisodes/RubberDucking001.ogg"
 segments: "Playing With A Full Stack, Bad TV"
 tags: [FullStack, BadTV]
+comments: true
 ---
 
 Matt S. explains why moving his primary machine to Arch Linux wasn't a huge mistake and teaches us why he prefers Ansible to manually creating VMs in the first 'Playing With a Full Stack'. We also discover a way to get Matt G. to watch Reality TV: Make it a game.

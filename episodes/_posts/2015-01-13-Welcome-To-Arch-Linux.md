@@ -1,6 +1,6 @@
 ---
 layout: episode
-number: "01"
+number: "001"
 duration: "31:27"
 length: "16449272"
 title: "Welcome to Arch Linux"

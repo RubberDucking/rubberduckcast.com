@@ -23,7 +23,7 @@ two_col: true
 
     <div class="content">
         <h2>Latest Episodes</h2>
-        {% for episode in site.categories.episodes limit=2%}
+        {% for episode in site.categories.episodes limit:2 %}
             <strong><a href="{{ BASE_PATH }}{{ episode.url }}">{{episode.number}}. {{episode.title}}</a></strong><br/>
             {{episode.short_description}}<br/><br/>
         {% endfor %}

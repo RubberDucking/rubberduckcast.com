@@ -8,12 +8,13 @@ layout: default
     {% for episode in site.categories.episodes %}
     <div class="content episodes">
         <h3><a href="{{ BASE_PATH }}{{ episode.url }}">{{episode.number}}. {{episode.title}}</a></h3>
+        <br/>
         {{episode.short_description}}
         <br/><br/>
-        <em>Featured Segments: {{episode.segments}}</em>
+        <strong>Recorded:</strong> <em>{{episode.date | date: "%-d %B %Y"}}</em><br/>
+        <strong>Featured Segments:</strong> <em>{{episode.segments}}</em>
         <br/>
-        <div class="icon-download"><a href="{{episode.aac_asset_link}}" class="download-link">Download Episode As AAC M4A</a></div>
-        <div class="icon-download"><a href="{{page.ogg_asset_link}}" class="download-link">Download Episode As OGG</a></div>
+        <div class="icon-download"><strong>Download As:</strong> <a href="{{episode.aac_asset_link}}" class="download-link">AAC M4A</a>, <a href="{{episode.ogg_asset_link}}" class="download-link">OGG</a></div>
     </div>
     {% endfor %}
 </div>

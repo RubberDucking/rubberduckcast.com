@@ -14,10 +14,7 @@ layout: default
     </audio>
     <br/>
     <br/>
-    <em>Recorded: {{page.date | date: "%-d %B %Y"}}</em><br/>
-    <em>Featured Segments: {{page.segments}}</em>
-
-    <br/>
-    <div class="icon-download"><a href="{{page.aac_asset_link}}" class="download-link">Download Episode As AAC M4A</a></div>
-    <div class="icon-download"><a href="{{page.ogg_asset_link}}" class="download-link">Download Episode As OGG</a></div>
+    <div class="icon-mic"><strong>Recorded:</strong> <em>{{page.date | date: "%-d %B %Y"}}</em></div>
+    <div class="icon-tag"><strong>Featured Segments:</strong> <em>{{page.segments}}</em></div>
+    <div class="icon-download"><strong>Download As:</strong> <a href="{{page.aac_asset_link}}" class="download-link">AAC M4A</a>, <a href="{{page.ogg_asset_link}}" class="download-link">OGG</a></div>
 </div>

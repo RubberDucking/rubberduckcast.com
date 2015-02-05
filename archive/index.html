@@ -11,9 +11,8 @@ layout: default
         <br/>
         {{episode.short_description}}
         <br/><br/>
-        <strong>Recorded:</strong> <em>{{episode.date | date: "%-d %B %Y"}}</em><br/>
-        <strong>Featured Segments:</strong> <em>{{episode.segments}}</em>
-        <br/>
+        <div class="icon-mic"><strong>Recorded:</strong> <em>{{episode.date | date: "%-d %B %Y"}}</em></div>
+        <div class="icon-tag"><strong>Featured Segments:</strong> <em>{{episode.segments}}</em></div>
         <div class="icon-download"><strong>Download As:</strong> <a href="{{episode.aac_asset_link}}" class="download-link">AAC M4A</a>, <a href="{{episode.ogg_asset_link}}" class="download-link">OGG</a></div>
     </div>
     {% endfor %}

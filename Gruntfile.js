@@ -42,4 +42,8 @@ module.exports = function(grunt) {
     'shell:download_report'
   ]);
 
+  grunt.registerTask('oggify', [
+    'ffmpeg'
+  ]);
+
 };

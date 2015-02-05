@@ -45,7 +45,7 @@ main_navigation:
 
 feed_navigation:
 - text: iTunes
-  url: /feed.xml
+  url: https://itunes.apple.com/us/podcast/rubber-ducking/id964299243
   icon: icon-podcast
 - text: RSS
   url: /feed.xml

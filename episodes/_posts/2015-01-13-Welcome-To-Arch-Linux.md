@@ -12,4 +12,4 @@ tags: [FullStack, BadTV]
 comments: true
 ---
 
-Matt S. explains why moving his primary machine to Arch Linux wasn't a huge mistake and teaches us why he prefers Ansible to manually creating VMs in the first 'Playing With a Full Stack'. We also discover a way to get Matt G. to watch Reality TV: Make it a game.
+Matt S. explains why <a href="https://mattsurabian.github.io/arch-linux-on-a-macbook-81/" target="_blank">moving his primary machine</a> to <a href="https://www.archlinux.org/" target="_blank">Arch Linux</a> wasn't a huge mistake and teaches us why he prefers <a href="http://docs.ansible.com/" target="_blank">Ansible</a> to manually creating VMs in the first 'Playing With a Full Stack'. We also discover a way to get Matt G. to watch Reality TV: Make it a game.

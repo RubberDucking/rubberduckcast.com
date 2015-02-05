@@ -5,8 +5,8 @@ duration: "31:27"
 length: "16449272"
 title: "Welcome to Arch Linux"
 short_description: "Matt S. moves to Arch Linux, talks deployment in his first installment of Playing with a Full Stack, and proposes an investment opportunity."
-aac_asset_link: "http://s3.amazonaws.com/rubberduckingepisodes/RubberDucking001.m4a"
-ogg_asset_link: "http://s3.amazonaws.com/rubberduckingepisodes/RubberDucking001.ogg"
+aac_asset_link: "http://episodes.rubberduckcast.com/RubberDucking001.m4a"
+ogg_asset_link: "http://episodes.rubberduckcast.com/RubberDucking001.ogg"
 segments: "Playing With A Full Stack, Bad TV"
 tags: [FullStack, BadTV]
 comments: true

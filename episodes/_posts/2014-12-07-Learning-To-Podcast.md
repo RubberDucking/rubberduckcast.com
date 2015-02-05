@@ -5,8 +5,8 @@ title: "Learning To Podcast"
 duration: "25:31"
 length: "13345475"
 short_description: "Find out how many balloons it would take to float a turtle and whether or not the best part of space is the difficulty of hoarding animals there."
-aac_asset_link: "http://s3.amazonaws.com/rubberduckingepisodes/RubberDucking000.m4a"
-ogg_asset_link: "http://s3.amazonaws.com/rubberduckingepisodes/RubberDucking000.ogg"
+aac_asset_link: "http://episodes.rubberduckcast.com/RubberDucking000.m4a"
+ogg_asset_link: "http://episodes.rubberduckcast.com/RubberDucking000.ogg"
 segments: "Back Of The Napkin, Bad TV"
 tags: [BackOfTheNapkin, BadTV]
 comments: true

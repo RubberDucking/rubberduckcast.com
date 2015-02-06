@@ -30,7 +30,6 @@ base_url: http://rubberduckcast.com
 author :
   name : Matt Gagne, Adam Jarret, Matt Surabian
   email : ducks@rubberduckcast.com
-  feedburner : feedname
 
 # navigation data used to generate header nav
 main_navigation:

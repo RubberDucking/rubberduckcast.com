@@ -19,15 +19,4 @@
 
     // Push the maximum percentage scrolled.
     _gap.push(['_gapTrackMaxScroll', 25]);
-
-    // TODO: get rid off this iffe?
-    (function() {
-        var gap = document.createElement('script');
-        gap.async = true;
-        gap.type = 'text/javascript';
-        gap.src = '/vendor/gap.min.js'; // Change.
-
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gap, s);
-    })();
 </script>

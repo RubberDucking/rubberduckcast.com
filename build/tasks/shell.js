@@ -5,12 +5,6 @@ module.exports = function(grunt) {
         options: {
             stderr: false
         },
-        dev: {
-            command: 'bundle exec jekyll serve'
-        },
-        build: {
-          command: 'bundle exec jekyll build'
-        },
         push_prod_s3: {
             command: 'aws --profile rubberduck s3 cp _site/ s3://rubberduckcast.com --recursive --include \'*\' --acl \'public-read\''
         },

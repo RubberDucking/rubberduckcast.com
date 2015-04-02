@@ -30,7 +30,6 @@ module.exports = function(grunt) {
   // Task to push code to S3
   grunt.registerTask('deploy-to-prod', [
     'default',
-    'jekyll:build',
     'shell:push_prod_s3'
   ]);
 

@@ -12,4 +12,4 @@ tags: [BackOfTheNapkin]
 comments: true
 ---
 
-Matt G. filled out some paperwork to buy a house and is pretty sure they took all his personal information and handed it out to random people on the street. He overcomes his frustration by forcing Matt S. to accept that space sailboats are possible because light has momentum. Adam eats leaves.
+Matt G. filled out some paperwork to buy a house and is pretty sure they took all his personal information and handed it out to random people on the street. He overcomes his frustration by forcing Matt S. to accept that space sailboats are possible because light has momentum. Adam boils leaves.

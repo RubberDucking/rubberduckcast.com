@@ -3,7 +3,7 @@ layout: episode
 number: "006"
 duration: "0:55:09"
 length: "40431626"
-title: "Light Hit's Hard"
+title: "Light Hits Hard"
 short_description: "Buying a house is a security nightmare but lasers are pretty cool"
 aac_asset_link: "http://episodes.rubberduckcast.com/RubberDucking006.m4a"
 ogg_asset_link: "http://episodes.rubberduckcast.com/RubberDucking006.ogg"

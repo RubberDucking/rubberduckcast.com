@@ -3,7 +3,10 @@ module.exports = function(grunt) {
 
     grunt.config('shell', {
         options: {
-            stderr: false
+            stderr: false,
+            execOptions: {
+              maxBuffer: Infinity
+            }
         },
         push_prod_s3: {
             command: 'aws --profile rubberduck s3 cp _site/ s3://rubberduckcast.com --recursive --include \'*\' --acl \'public-read\''

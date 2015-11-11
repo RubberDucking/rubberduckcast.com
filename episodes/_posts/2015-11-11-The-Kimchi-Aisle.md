@@ -7,8 +7,8 @@ title: "The Kimchi Aisle"
 short_description: "HashiConf is good, ReactJS can burn you, and leaving your foot in a storage center is bad."
 aac_asset_link: "http://episodes.rubberduckcast.com/RubberDucking007.m4a"
 ogg_asset_link: "http://episodes.rubberduckcast.com/RubberDucking007.ogg"
-segments: "Back of the Napkin"
-tags: [BackOfTheNapkin]
+segments: "Dot Net Day Job"
+tags: [.NETDayJob]
 comments: true
 ---
 

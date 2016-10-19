@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             command: 'aws --profile rubberduck s3 cp _site/ s3://rubberduckcast.com --recursive --include \'*\' --acl \'public-read\''
         },
         push_episodes: {
-            command: 'aws --profile rubberduck s3 sync _audio/ s3://episodes.rubberduckcast.com --include \'*\' --acl \'public-read\''
+            command: 'aws --profile rubberduck s3 sync "_audio/Episode\ Final\ Outputs" s3://episodes.rubberduckcast.com --include \'*\' --acl \'public-read\''
         },
         download_report: {
             command: 'aws --profile rubberduck s3 sync s3://logs-rubberducking ./_s3_logs && ' +

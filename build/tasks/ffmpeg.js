@@ -15,13 +15,13 @@ module.exports = function(grunt) {
             },
             files: [{
                 expand: true,
-                cwd: './_audio',
+                cwd: './_audio/Episode\ Final\ Outputs',
                 src: ['*.m4a'],
                 filter: function(filepath) {
                     // only do the conversion if the ogg file doesn't already exist
                     return !grunt.file.isFile(filepath.slice(0, -3) + 'ogg');
                 },
-                dest: './_audio',
+                dest: './_audio/Episode\ Final\ Outputs',
                 ext: '.ogg'
             }]
         }

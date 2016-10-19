@@ -10,7 +10,7 @@
   "disallowSpacesInsideArrayBrackets": true,
   "disallowSpacesInsideParentheses": true,
   "disallowTrailingWhitespace": true,
-  "maximumLineLength": 150,
+  "maximumLineLength": 200,
   "requireCommaBeforeLineBreak": true,
   "requireLineFeedAtFileEnd": true,
   "requireSpaceAfterBinaryOperators": [
